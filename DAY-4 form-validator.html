@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <table>
+            <tr>
+        <td><h1>Simple Form</h1></td>
+        </tr>
+        <tr>
+       <td><label> Enter your name : </label></td>
+       <td><input type="text" id="name" placeholder="Enter your name" required></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label>Enter your Email: </label></td>
+            <td><input type="email" id="email" placeholder="Enter your Email" required></td>
+        </tr>
+        </table>
+        <button>submit</button>
+        <p id="message"></p>
+    </form>
+    <script>
+         const message=document.getElementById("message");
+         const form=document.getElementById("MyForm");
+         form.addEventListener("submit",function(e))
+        {
+         e.preventDefault();
+         const name=document.getElementById("name").value.trim();
+         const email=document.getElementById("email").value.trim();
+
+        }
+
+    </script>
+</body>
+</html>
